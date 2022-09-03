@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.controls {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid #000;
+}
+
+label {
+  font-weight: 600;
+}
+
+:is(.controls, option, select) {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+select {
+  text-align: center;
+}
+
+#canvas {
+  width: 600px;
+  height: 600px;
+}
+
+@media (max-width: 600px) {
+  body {
+    height: 80vh;
+  }
+
+  #canvas {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+  }
+}
